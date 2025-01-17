@@ -1,0 +1,28 @@
+Introduction to DBMS:
+          1)The databases are almost used everywhere in this modern world such as universities,
+organisations,Hospital and government agencies also rely on databases to store their datas.
+          2)A database is a collection of interrelated datas.
+          3)For example, A students information consists of his name,rollNo,address and mobile number.
+          4)So those datas where stored in a database in a structured or unstructured manner
+which should be easy to manage or manipulate those datas later.
+          5)The primary objective of the database is to provide both convinient and efficient retrieval
+of data.
+          6) DBMS is designed to manage large bodes of information.
+          7) In DBMS the safety of the information stored must be ensured despite of 
+system crashes and attempts to unauthorized access.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
