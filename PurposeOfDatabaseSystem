@@ -1,4 +1,71 @@
 Purpose of Database systems:
           Let us consider a university's data storing needs for an example, the university need to keep the information about
 staffs,students,departments and course offerings. 
-          One way to keep those informations are 
+          One way to keep those informations are managing it in the file systems.
+          But soon if the university wants to change any records and fields(or attributes),so new applications
+programs may also have to be written to handle new rules in the university. Thus the time moves on the system may need
+more files and more application programs.
+
+          This file-processing system is supported by a usual operating system.But the file system has major disadvantages:
+===========================================================================================================================================================================================
+                    1) Data redundancy and inconsistency:
+                              Occurs when the data is stored in multiple places,leading to duplications. Data inconsistency happens
+                    when these redundant copies differ due to unsynchronized updates.
+                              Eg: In a file system, if a students address is stored in both the admision file and the fee record, updating it in
+                    one file but not the other causes inconsistency, whereas in DBMS instead of storing the address in both the Admission and Fee tables, 
+                    the DBMS stores it only in the Student table, and both other tables reference the Student table via a foreign key. This ensures 
+                    that any updates to the address are centralized and consistent.
+============================================================================================================================================================================================
+                    2) Difficulty in accessing data:
+                              Difficulties in Accessing Data in File Systems arise due to the lack of a query language and structured organization, 
+                    making data retrieval time-consuming and error-prone.
+                              Eg: In a file system, to find all students from a specific city, you may need to manually search through every record 
+                    in a text file, whereas a DBMS allows instant querying with SQL (SELECT * FROM students WHERE city = 'Chennai';).
+=============================================================================================================================================================================================
+                    3) Data isolation:
+                              In file systems the data is scattered across various files , and that makes it more complicated to retrieve datas quickly.
+                              Eg:Student details are stored in one file (e.g., Student.txt), and course details are stored in another file (e.g., Course.txt).
+                                 To find a student's course, you would need to manually cross-reference the data from both files, leading to inefficiency.
+                                 How It's Overcome in DBMS:In a DBMS, data is stored in related tables, ensuring that all relevant information is organized 
+                    and can be easily accessed together. Foreign keys and joins between tables eliminate isolation, allowing for efficient querying and 
+                    updating of related data in a unified system.
+==============================================================================================================================================================================================
+                    4) Integrity problems:
+                              Integrity problems in file systems arises due to the lack of constraints , leads to invalid or contradictory data.
+                              Eg: In file system if a students record shows they are enrolled in a course C123,but this course doesn't exist in the course list file,
+                    but in DBMS there was constraints to check existence of the course number such as C123 which prevents it to add the invalid course code.
+==============================================================================================================================================================================================
+                    5) Atomicity problems:
+                              Atomicity Problems occur in file systems because they lack mechanisms to ensure that all parts of a transaction are completed successfully 
+                    or none at all, leading to partial updates and inconsistent data.
+                              Eg: Suppose a student pays their fees, and the system updates the fee payment file but fails to update the student account balance file due to a system crash. 
+                    This results in inconsistent data, as one file reflects the payment, while the other does not.
+                              In a DBMS, atomicity is ensured through transactions with ACID properties. If any part of a transaction fails, the entire operation is rolled back, 
+                    ensuring data consistency.
+==============================================================================================================================================================================================
+                    6) Concurrent-access anomalies:
+                              Concurrent Access Anomalies occur when multiple users or processes access or modify the same data simultaneously in a file system, 
+                    leading to inconsistent or incorrect data.
+                    Example: Two users try to update a student's marks simultaneously.
+                              User 1 increases the marks from 80 to 90.
+                              User 2 increases the marks from 80 to 85.
+                              If both updates happen without coordination, the final marks may incorrectly remain 85 or 90, depending on whose update is saved last,
+                    overwriting the other.
+                              In a DBMS, concurrency control mechanisms like locks and transaction isolation levels ensure such anomalies are avoided, 
+                    maintaining data consistency.
+==============================================================================================================================================================================================
+                    7) Security problems:
+                              Security Problems in file systems arise due to the lack of robust mechanisms to control who can access or modify data, making sensitive information
+                    vulnerable to unauthorized access or tampering.
+                              Example: If student records are stored in a plain text file without encryption, anyone with access to the file can view or modify the data,
+                    risking privacy and integrity.
+                              In a DBMS, security features like user authentication, role-based access control, and data encryption ensure that only authorized users can 
+                    access or modify specific data, providing a secure environment for sensitive information.
+
+                                                  ---------------------------------------x-------------------------------------------
+
+
+
+
+
+
