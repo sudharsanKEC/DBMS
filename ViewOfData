@@ -1,0 +1,31 @@
+       Adatabase system is a collection of interrelated data and a set of programs that allow
+users to access and modify these data. A major purpose of a database system is to provide users
+with an abstract view of the data.
+       That is the system hides how data is stored and maintained.
+The data models are classified into four different categories:
+          1) Relational Model : 
+                      The relational model uses a collection of tables to represent both data and the relationships among those data. 
+          Each table has multiple columns,and each column is the atrribute and the rows of each column contains the different values. 
+          Tables are also known as relations. The relational database model was the most widely used database model and a vast majority 
+          current database systems are based on the relational mode.
+          2) Entity relationship model :
+                        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
