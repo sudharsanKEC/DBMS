@@ -12,10 +12,14 @@ The data models are classified into four different categories:
                        The entity relationship model in sql is used to visually understand the relationship between data and its relationship
                        The datas are entities,attributes and the relationship between them.
                             Entity: A real world object such as students and courses etc...
-                            
-
-
-
+                            Attributes: Properties or details of an entity
+                                Eg : An entity called student have attributes like StudentID,Name and Age.
+                            Relationship: A connection between the entities.
+                                Eg : A student registers in a course
+               ER model representions:
+                            Entities are represented as rectangles (e.g., Student, Course).
+                            Attributes are represented as ovals connected to their entities.
+                            Relationships are represented as diamonds connecting entities.
 
 
 
