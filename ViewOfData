@@ -20,6 +20,7 @@ The data models are classified into four different categories:
                             Entities are represented as rectangles (e.g., Student, Course).
                             Attributes are represented as ovals connected to their entities.
                             Relationships are represented as diamonds connecting entities.
+                            So, the ER model is a diagram used to understand the relationship between the tables.
 
 
 
