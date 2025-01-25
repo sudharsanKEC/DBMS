@@ -9,8 +9,10 @@ The data models are classified into four different categories:
           Tables are also known as relations. The relational database model was the most widely used database model and a vast majority 
           current database systems are based on the relational mode.
           2) Entity relationship model :
-                        
-          
+                       The entity relationship model in sql is used to visually understand the relationship between data and its relationship
+                       The datas are entities,attributes and the relationship between them.
+                            Entity: A real world object such as students and courses etc...
+                            
 
 
 
